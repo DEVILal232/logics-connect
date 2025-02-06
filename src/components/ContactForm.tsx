@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -67,6 +68,31 @@ const ContactForm = () => {
               Send Message
             </button>
           </form>
+        </div>
+
+        {/* Address and Social Media Section */}
+        <div className="mt-16 pt-8 border-t border-gray-200">
+          <div className="text-center">
+            <h3 className="text-xl font-semibold text-secondary mb-4">Visit Us</h3>
+            <p className="text-secondary-dark mb-2">LOGICS Coaching Institute</p>
+            <p className="text-secondary-dark mb-2">123 Learning Street</p>
+            <p className="text-secondary-dark mb-4">New York, NY 10001</p>
+            
+            <div className="flex justify-center space-x-6 mt-6">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-dark transition-colors">
+                <Facebook className="h-6 w-6" />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-dark transition-colors">
+                <Twitter className="h-6 w-6" />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-dark transition-colors">
+                <Instagram className="h-6 w-6" />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-dark transition-colors">
+                <Linkedin className="h-6 w-6" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
